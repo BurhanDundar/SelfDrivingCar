@@ -1,0 +1,87 @@
+body{
+    margin:0;
+    background:darkgray;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#verticalButtons{
+    display:flex;
+    flex-direction:column;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px 7px 5px;
+    margin: 2px;
+    cursor:pointer;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+button:hover{
+    background:#3A5BA0;
+    color: white;
+}
+
+#networkCanvas{
+    background:black;
+}
+#carCanvas{
+    background:lightgray;
+}
+#gameInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    margin: 1rem;
+    background-color: aliceblue;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#gameInfo:hover{
+    background-color:#3A5BA0;
+    color: white;
+}
+
+#gameBestScore{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3A5BA0;
+    border-radius: 50%;
+    color: white;
+    font-size: large;
+    font-weight: 700;
+    font-family: "system-ui";
+}
+
+#gameBestScoreText{
+    color: white;
+    font-size: large;
+    font-weight: 700;
+    font-family: "system-ui";
+    margin: 1rem;
+    color: #3A5BA0;
+}
+
+#parentScoreInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gameTime,
+#carVelocity,
+#liveCarCount,
+#bestCarDistance{
+    margin-bottom: 1rem;
+}

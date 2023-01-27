@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Self-driving car - No libraries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="parentGameInfo">
+        <div id="parentScoreInfo">
+            <div id="gameBestScoreText">Game Best Score</div>
+            <div id="gameBestScore"></div>
+        </div>
+        <div id="gameInfo">
+            <h2 id="gameInfoHeader"> About Game</h2>
+            <div id="gameTime"></div>
+            <div id="carVelocity"></div>
+            <div id="liveCarCount"></div>
+            <div id="bestCarDistance"></div>
+        </div>
+    </div>
+    <canvas id="carCanvas"></canvas>
+    <div id="verticalButtons">
+        <button onclick="save()">Save Best Brain</button>
+        <button onclick="discard()">Discard Best Brain</button>
+    </div>
+    <canvas id="networkCanvas"></canvas>
+    <script src="visualizer.js"></script>
+    <script src="network.js"></script>
+    <script src="sensor.js"></script>
+    <script src="utils.js"></script>
+    <script src="road.js"></script>
+    <script src="controls.js"></script>
+    <script src="car.js"></script>
+    <script src="trafficLight.js"></script>
+    <script src="trafficLightSensor.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
